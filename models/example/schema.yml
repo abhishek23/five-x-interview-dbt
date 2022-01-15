@@ -1,0 +1,26 @@
+
+version: 2
+
+models:
+    - name: province_wise_details
+      description: "Contains Province wise details in Indonesia"
+      columns:
+          - name: province_name
+            description: "Name of the Province"
+            tests:
+                - unique
+                - not_null
+          - name: population
+            description: "Population of the Province"
+          - name: population_density
+            description: "Population density of the Province"
+          - name: total_recovered
+            description: "Total No of recovered cases in the Province"
+          - name: total_active_cases
+            description: "Total No of active cases in the Province"
+          - name: total_cases
+            description: "Total No of positive cases in the Province"
+          - name: total_deaths_per_million
+            discription: "Total No of deaths in the Province per million"
+          - name: area_km_2
+            description: "area_km_2"
